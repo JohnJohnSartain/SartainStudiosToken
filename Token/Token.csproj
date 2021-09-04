@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <PackageId>SartainStudios.Token</PackageId>
+    <Authors>John Sartain</Authors>
+    <Company>Sartain Studios</Company>
+    <Product>Sartain Studios Token</Product>
+    <Description>Simple token library</Description>
+    <Copyright>Sartain Studios</Copyright>
+    <PackageProjectUrl>https://github.com/jhnsartain3/SartainStudiosToken</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jhnsartain3/SartainStudiosToken</RepositoryUrl>
+    <RepositoryType>Nuget Package</RepositoryType>
+    <PackageTags>Token</PackageTags>
+    <RootNamespace>SartainStudios.Token</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SartainStudios.Common" Version="1.6.7" />
+  </ItemGroup>
+
+</Project>
