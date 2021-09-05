@@ -35,7 +35,7 @@ public class JwtToken : IToken
 
         var claims = GetClaimsFromToken(token);
 
-        return claims.Claims.Any(m => m.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role" && IsPrivilegedAccount(m.Value));
+        return claims.Claims.Any(m => m.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role" && !IsPrivilegedAccount(m.Value));
     }
 
     private static string GetTokenFromAuthenticationBearerString(string token) => token.Substring(7, token.Length - 7);
