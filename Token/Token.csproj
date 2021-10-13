@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <Version>1.0.3</Version>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>1.0.4</Version>
     <PackageId>SartainStudios.Token</PackageId>
     <Authors>John Sartain</Authors>
     <Company>Sartain Studios</Company>
@@ -18,7 +19,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SartainStudios.Common" Version="1.6.8" />
+    <PackageReference Include="SartainStudios.Entities" Version="1.0.0" />
+    <PackageReference Include="SartainStudios.SharedModels" Version="1.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.13.1" />
   </ItemGroup>
 
 </Project>

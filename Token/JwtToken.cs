@@ -1,9 +1,9 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using SartainStudios.Entities.Entities;
+using SartainStudios.SharedModels.Users;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using SharedModels;
-using Sartain_Studios_Common.SharedEntities;
 
 namespace SartainStudios.Token;
 
