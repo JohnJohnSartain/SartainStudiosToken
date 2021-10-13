@@ -87,7 +87,7 @@ public class JwtToken : IToken
 
         if (userModel.Username == null) userModel.Username = "No name found";
         if (userModel.FirstName == null) userModel.FirstName = "No first name given";
-        if (userModel.Lastname == null) userModel.Lastname = "No last name found";
+        if (userModel.LastName == null) userModel.LastName = "No last name found";
         if (userModel.Id == null) userModel.Id = "No user id found";
         if (userModel.ProfilePhoto == null) userModel.ProfilePhoto = "No profile photo found";
         if (userModel.Email == null) userModel.Email = "No email found";
@@ -103,7 +103,7 @@ public class JwtToken : IToken
         foreach (var role in userModel.Roles) claims.Add(new Claim(ClaimTypes.Role, role));
 
         claims.Add(new Claim(ClaimTypes.Name, userModel.Username));
-        claims.Add(new Claim(JwtRegisteredClaimNames.GivenName, userModel.FirstName + " " + userModel.Lastname));
+        claims.Add(new Claim(JwtRegisteredClaimNames.GivenName, userModel.FirstName + " " + userModel.LastName));
         claims.Add(new Claim(JwtRegisteredClaimNames.NameId, userModel.Id.ToString()));
         claims.Add(new Claim(JwtRegisteredClaimNames.FamilyName, userModel.ProfilePhoto));
         claims.Add(new Claim(JwtRegisteredClaimNames.Email, userModel.Email));
