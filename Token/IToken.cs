@@ -1,4 +1,4 @@
-﻿using SartainStudios.SharedModels.Users;
+﻿using SartainStudios.SharedModels.User;
 
 namespace SartainStudios.Token;
 

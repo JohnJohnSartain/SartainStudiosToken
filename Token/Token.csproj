@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <PackageId>SartainStudios.Token</PackageId>
     <Authors>John Sartain</Authors>
     <Company>Sartain Studios</Company>
@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="SartainStudios.Entities" Version="1.0.0" />
-    <PackageReference Include="SartainStudios.SharedModels" Version="1.0.4" />
+    <PackageReference Include="SartainStudios.SharedModels" Version="1.0.6" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.13.1" />
   </ItemGroup>
 

@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using SartainStudios.Entities.Entities;
-using SartainStudios.SharedModels.Users;
+using SartainStudios.SharedModels.User;
 using SartainStudios.Token;
 
 namespace Tests;
